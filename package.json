@@ -1,0 +1,19 @@
+{
+  "name": "scalable-node-app",
+  "version": "1.0.0",
+  "description": "A Demo Node App which can scale",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "web": "set PROCESS_TYPE=web&& node index.js",
+    "api": "set PROCESS_TYPE=api&& node index.js",
+    "twitter-stream-worker": "set PROCESS_TYPE=twitter-stream-worker&& node index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^5.0.1",
+    "pubnub": "^4.20.2"
+  }
+}
